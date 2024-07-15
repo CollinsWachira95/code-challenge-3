@@ -16,6 +16,10 @@ JSON Server installed globally or locally in your project.
 Installation
 Clone the repository to your local machine.
 
+## Link
+To access the backend link click the link below:
+[Backend Link](https://backend-amber-six.vercel.app/)
+
 bash
 Navigate to the project directory.
 
