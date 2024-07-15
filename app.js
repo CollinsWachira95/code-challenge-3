@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Fetch and display details of the first movie
     function loadFirstMovie() {
-      fetch('http://localhost:3000/films/1')
+      fetch('https://backend-amber-six.vercel.app/films/1')
         .then(response => response.json())
         .then(movie => showMovieDetails(movie))
         .catch(error => console.error('Error loading initial movie:', error));
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Fetch and display all movies in the list
     function loadMovies() {
-      fetch('http://localhost:3000/films')
+      fetch('https://backend-amber-six.vercel.app/films')
         .then(response => response.json())
         .then(movies => showMovieList(movies))
         .catch(error => console.error('Error loading movies:', error));
