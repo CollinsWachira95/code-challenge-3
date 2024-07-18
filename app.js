@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Fetch and display details of a selected movie
     function loadMovieDetails(movieId) {
-      fetch(`http://localhost:3000/films/${movieId}`)
+      fetch(`https://backend-amber-six.vercel.app/films/${movieId}`)
         .then(response => response.json())
         .then(movie => showMovieDetails(movie))
         .catch(error => console.error('Error fetching movie details:', error));
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Update movie tickets on the server and re-display details
     function updateTicketsOnServer(movie) {
-      fetch(`http://localhost:3000/films/${movie.id}`, {
+      fetch(`https://backend-amber-six.vercel.app/films/${movie.id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
